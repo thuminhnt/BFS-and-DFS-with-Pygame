@@ -4,7 +4,7 @@ import pygame
 ROWS = 100
 COLS = 100
 
-CELL_SIZE = 7.5  # Kích thước mỗi ô trong pixel
+CELL_SIZE = 7  # Kích thước mỗi ô trong pixel
 
 # Màu sắc cho các ô
 COLOR_WALL = (0, 0, 0)  # Đen cho tường
@@ -36,6 +36,6 @@ def draw_maze(screen, maze, visited_dfs=set(), visited_bfs=set(), path=None):
 
             # Vẽ ô
             pygame.draw.rect(screen, color,
-                             (j * CELL_SIZE, i * CELL_SIZE, CELL_SIZE - 1, CELL_SIZE - 1))  # Vẽ ô
+                             (j * CELL_SIZE, i * CELL_SIZE, CELL_SIZE, CELL_SIZE))  # Vẽ ô
 
     pygame.display.flip() # Cập nhật màn hình

@@ -11,7 +11,7 @@ from bfs import bfs
 ROWS = 100
 COLS = 100
 
-CELL_SIZE = 7.5  # Kích thước mỗi ô trong pixel
+CELL_SIZE = 7  # Kích thước mỗi ô trong pixel
 
 # Màu sắc cho các ô
 COLOR_WALL = (0, 0, 0)  # Đen cho tường
